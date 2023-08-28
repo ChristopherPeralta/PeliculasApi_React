@@ -30,7 +30,7 @@ npm start
 ```
 
 ## Uso
-https://apimovies-react.netlify.app)https://apimovies-react.netlify.app
+https://apimovies-react.netlify.app
 - Abre la aplicación en tu navegador.
 - Busca la pelicula que te interese ver su detalle.
 - Haz clic en la película para ver sus detalles.
