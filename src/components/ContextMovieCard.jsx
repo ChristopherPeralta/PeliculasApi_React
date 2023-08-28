@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { get } from "../data/dataApi";
 import { MovieCard } from "./MovieCard";
 
+import "../components/ContextMovieCard.css"
+
 export function ContextMovieCard() {
   const [movies, SetMovies] = useState([]);
   useEffect(() => {
@@ -13,7 +15,7 @@ export function ContextMovieCard() {
   }, []);
 
   return (
-    <ul>
+    <ul className="container">
         {movies.map((movie)=>(
             <MovieCard movie={movie}/>
         ))}
