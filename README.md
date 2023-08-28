@@ -5,11 +5,10 @@ Una aplicación para ver los detalles de las películas utilizando React y consu
 
 
 - Pagina principal:
-![image](https://github.com/ChristopherPeralta/PeliculasApi_React/assets/114698519/f27f1b21-24a3-48e2-9e3d-da2d616624f4)
-
+[![Captura-de-pantalla-2023-08-28-181950.png](https://i.postimg.cc/j5yB16tk/Captura-de-pantalla-2023-08-28-181950.png)](https://postimg.cc/CBLvBqZj)
 
 - Detalle de la pelicula
-![image](https://github.com/ChristopherPeralta/PeliculasApi_React/assets/114698519/ea9c9cb4-c37a-4511-999f-9af69e352f11)
+[![Captura-de-pantalla-2023-08-28-182148.png](https://i.postimg.cc/HLNMVKcF/Captura-de-pantalla-2023-08-28-182148.png)](https://postimg.cc/mcQknmSS)
 
 
 ## Características
