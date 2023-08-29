@@ -1,24 +1,22 @@
-import { useEffect, useState } from "react";
-import { get } from "../data/dataApi";
 import { MovieCard } from "./MovieCard";
+import { useFetch } from "../Fetch/useFetch";
 
 import "../components/ContextMovieCard.css"
+import loadingImg from "../img/loading.png"
 
 export function ContextMovieCard() {
-  const [movies, SetMovies] = useState([]);
-  useEffect(() => {
-    get("/discover/movie").then((data) => {
-      SetMovies(data.results);
-        console.log(data)
-
-    });
-  }, []);
+  const {data, loading, error} = useFetch([])
 
   return (
-    <ul className="container">
-        {movies.map((movie)=>(
-            <MovieCard key={movie.id} movie={movie}/>
-        ))}
-    </ul>
+    <div>
+      <ul className="container">
+          {error && <li>Error: {error.message}</li>} {/*Manejo de error*/}
+          {loading && <img src={loadingImg} alt="Cargando..."/>}  {/*Mientras carga*/}
+          
+          {data.map((item)=>(
+              <MovieCard key={item.id} movie={item}/>
+          ))}
+      </ul>
+    </div>
   );
 }
